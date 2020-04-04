@@ -1,0 +1,73 @@
+<!--
+- Commend trong HTML được đặt trong dấu như này
+- HTML được mở bằng trình duyệt trong file project
+- Mỗi 1 thẻ sẽ được thể hiện 1 dòng dữ liệu trên web (Khi lồng các thẻ con vào 1 thẻ cha thì các thẻ con sẽ ở trên 1 dòng dữ liệu)
+- Tất cả các thẻ được viết bên trong một thẻ cha là <html lang="en"> </html> - lang thuộc tính thể hiện ngôn ngữ.
+- HTML có 2 thẻ chính là thẻ head và thẻ body
++ Thẻ head để thể hiện tab title của web, title được viết trong thẻ <title>.
++ Thẻ body thể hiện nội dung của web
+- Để có thể hiểu rõ hơn về tác dụng của các thẻ chúng ta dùng các thuộc tính để làm rõ: <p id="tên">
+- Trong HTML có 4 loại thuộc tính cơ bản là: id, title, class và style.
++ id: Định danh cho thẻ, id là duy nhất không được trùng nhau trong 1 file HTML
++ Title: Thể hiện nội dung của title, dùng cho các thẻ như <a>, <p>, <img>,..
++ Thuộc tính style thể hiên các quy tắc style của phần từ(font, size, color, ...) sau này sẽ được dùng trong HTML
++ Thuộc tính class để chỉ định thẻ thuộc nhóm nào, dùng để xác định thẻ cho lập trình và cho định dạng
+-> Ngoài ra còn có 1 dố thuộc tính như là:
++ Thuộc tính href: chỉ định liên kết cho thẻ <a>
++ Thuộc tính alt: thể hiện nội dung của ảnh dùng cho thẻ <img>
++ Các thuộc tính kích thước: width, height,...
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>  <!-- Thẻ hiện title của web, thẻ title sẽ luôn có tooltip -->
+</head>
+
+<body>
+<div> <!-- Thẻ <div> thể hiện nội dung khu -->
+<h1> Tiêu đề 1 </h1> <!-- HTML có 6 thẻ với kích thước khác nhau để thể hiện tiêu đề, từ <h1> -> <h6> -->
+<h2> Tiêu đề </h2>
+<h3> Tiêu đề 3 </h3>
+<h4> Tiêu đề 4 </h4>
+<h5> Tiêu đề 5 </h5>
+<h6> Tiêu đề 6 </h6>
+</div>
+
+<p> <!-- Thẻ <p> để thể hiện nộng dung đoạn văn -->
+    <a> Đoạn văn 1 </a>
+    <br>  <!-- Thẻ <br> để xuống dòng dữ liệu -->
+    <a> Đoạn văn nữa </a>
+</p>
+<hr> <!-- Thẻ <hr> hoặc <hr /> để xuống dòng dữ liệu và có dấu gạch ngang ngăn cách giữa 2 đoạn dữ liệu -->
+<p> Đoạn văn 2 </p>
+<pre> <!-- Thẻ <pre> dùng để dữ nguyên định dạng của văn bản -->
+    Nhà em có một con mèo (Nó tên là mẹo)
+       Lông mẹo màu trắng tinh.
+</pre>
+<center> <!-- Thẻ <center> dùng để căn giữa đoạn văn -->
+    <p> Căn giữa đoạn văn này </p>
+</center>
+<p>
+    <p1> Ví dụ về khoảng trống&nbsp;ngắt&nbsp;dòng </p1> <!-- chèn 1 khoảng cách -->
+    <br>
+    <p2> Ví dụ về khoảng trống&ensp;ngắt&ensp;dòng </p2> <!-- chèn 2 khoảng cách -->
+    <br>
+    <p3> Ví dụ về khoảng trống&emsp;ngắt&emsp;dòng </p3> <!-- chèn 4 khoảng cách -->
+    <br>
+    <p4> Ví dụ về khoảng trống&ensp;&ensp;&ensp;&ensp;dòng </p4> <!-- tương đương với phím tab -->
+    <br>
+    <p5> Gạch chân <u>đoạn này </u></p5> <!-- Thẻ <u> để gach chân đoan văn -->
+    <br>
+    <p6> In nghiêng <i>đoạn này</i></p6> <!-- Thẻ <i> để in nghiêng đoạn văn -->
+</p>
+<a href="https://www.google.com.vn/"> <!-- thẻ a là thẻ liên kết URL. tạo ra linktext để kết nối đến Web đó -->
+    google
+</a>
+</body>
+</html>
+
